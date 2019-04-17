@@ -9,14 +9,16 @@ $( document ).ready(function() {
     this.horns = horns;
   }
 
- 
+ var list = [];
+
   $.getJSON( 'page-1.json', function( json ) {
     json.forEach(element =>{
         let img = new NewImage(element.image_url, element.title, element.description, element.keyword, element.horns);
         let newImg = $('<img id="dynamic">');
         newImg.attr('src', element.image_url);
         newImg.appendTo('#photo-template')
-        console.log(img);
+        list.push(img);
     })
   });
+
 });
