@@ -24,7 +24,7 @@ $( document ).ready(function() {
 
   $('#mySelect').change(function(){
     var value = $(this).val();
-        $(`img`).hide();
-        $(`img[alt=${value}]`).show();
+    $(`img`).hide();
+    $(`img[alt=${value}]`).show();
   });
 });
