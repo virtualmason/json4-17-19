@@ -6,5 +6,10 @@ $( document ).ready(function() {
 
       
     });
+    json.forEach(element =>{
+        let newImg = $('<img id="dynamic">');
+        newImg.attr('src', element.image_url);
+        newImg.appendTo('#photo-template')
+    })
   });
 });
