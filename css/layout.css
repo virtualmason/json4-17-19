@@ -8,6 +8,6 @@ img {
     width: 25%;
     margin: 10px 20px;
     justify-content: space-around;
-    align-items: stretch;
     border: 5px solid black;
+    flex-direction: row;
 }

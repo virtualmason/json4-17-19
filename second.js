@@ -9,7 +9,7 @@ $( document ).ready(function() {
     this.horns = horns;
   }
   let uniqueArr =[];
-  $.getJSON( 'page-1.json', function( json ) {
+  $.getJSON( 'page-2.json', function( json ) {
     json.forEach(element =>{
       if(!uniqueArr.includes(element.keyword)) {
         uniqueArr.push(element.keyword);
