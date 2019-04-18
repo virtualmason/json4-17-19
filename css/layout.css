@@ -1,25 +1,23 @@
-section.photo-template {
-    width: 30%;
-    /* display: flex; */
-}
-
 img {
     height: 30%;
     width: 25%;
     margin: 10px 20px;
-    float: left;
-    /* justify-content: space-around;
-    align-items: stretch; */
+    justify-content: space-around;
+    align-items: stretch;
     border: 5px solid black;
 }
 
 p {
     margin: 10px 0px;
     font-size: 20px;
-    clear: both;
 }
 
 h2 {
     font-size: 30px;
     font-weight: bold;
+}
+
+div.entry {
+    display: inline;
+    display: flex;
 }
