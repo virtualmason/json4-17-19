@@ -31,21 +31,22 @@
       <!--handlebars-->
       <script id="entry-template" type="text/x-handlebars-template">
         <div class="entry">
-          <h1>{{title}}</h1>
           <div class="body">
             {{body}}
           </div>
+          <h2 id={{id}}> {{title}}</h2>
+        <img  src={{image}} alt={{alt}}>
+        <p id={{id}}>{{description}}</p> 
         </div>
       </script>
     </main>
-    <footer>
-      &copy; 2018 Code Fellows
-    </footer>
+   
     <script
     src="https://code.jquery.com/jquery-3.4.0.min.js"
     integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
     crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.js"></script>
     <script src ='app.js'></script>
+    
   </body>
 </html>
