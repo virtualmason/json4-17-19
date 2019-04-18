@@ -1,3 +1,14 @@
 .hide {
   display:none;
 }
+
+#mySelect {
+  border-radius: 20px;
+  outline: none;
+  border: none;
+}
+
+#mySelect:active {
+outline: none;
+border: none;
+}
