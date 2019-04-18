@@ -5,17 +5,9 @@ section.photo-template {
 
 img {
     height: 30%;
-    width: 30%;
+    width: 25%;
     margin: 10px 20px;
     justify-content: space-around;
     align-items: stretch;
     border: 5px solid black;
-}
-
-h2 {
-
-}
-
-p {
-    
 }
