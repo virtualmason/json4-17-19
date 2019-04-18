@@ -15,10 +15,14 @@ $( document ).ready(function() {
         uniqueArr.push(element.keyword);
       }
       let img = new NewImage(element.image_url, element.title, element.description, element.keyword, element.horns);
+      let imgTitle = $(`<h2 id="${element.keyword}">${element.title}</h2>`);
+      imgTitle.appendTo('#photo-template');
       let newImg = $('<img id="dynamic">');
       newImg.attr('src', element.image_url);
       newImg.attr('alt', element.keyword);
       newImg.appendTo('#photo-template');
+      let imgDescription = $(`<p id="${element.keyword}">${element.description}</p>`);
+      imgDescription.appendTo('#photo-template');
       // list.push(img);
 
     });
@@ -35,7 +39,11 @@ $( document ).ready(function() {
       $(`img`).show();
     } else {
       $(`img`).hide();
+      $(`h2`).hide();
+      $(`p`).hide();
       $(`img[alt=${value}]`).show();
+      $(`h2[id=${value}]`).show();
+      $(`p[id=${value}]`).show();
     }
 
   });
