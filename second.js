@@ -15,10 +15,14 @@ $( document ).ready(function() {
         uniqueArr.push(element.keyword);
       }
       let img = new NewImage(element.image_url, element.title, element.description, element.keyword, element.horns);
+      let imgTitle = $(`<h2>${element.title}</h2>`);
+      imgTitle.appendTo('#photo-template');
       let newImg = $('<img id="dynamic">');
       newImg.attr('src', element.image_url);
       newImg.attr('alt', element.keyword);
       newImg.appendTo('#photo-template');
+      let imgDescription = $(`<p>${element.description}</p>`);
+      imgDescription.appendTo('#photo-template');
       // list.push(img);
 
     });
@@ -40,4 +44,3 @@ $( document ).ready(function() {
 
   });
 });
-
