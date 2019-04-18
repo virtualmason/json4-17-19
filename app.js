@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-
+ 
 
   function NewImage(image_url, title, description, keyword, horns) {
     this.image_url = image_url;
@@ -39,4 +39,10 @@ $( document ).ready(function() {
     }
 
   });
+  // Handle bars
+  var source   = document.getElementById('entry-template').innerHTML;
+  var template = Handlebars.compile(source);
+  var context = {title: 'My New Post', body: 'This is my first post!'};
+  var html    = template(context);
+  $('body').append(html);
 });
