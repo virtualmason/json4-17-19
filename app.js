@@ -11,8 +11,10 @@ $( document ).ready(function() {
       var source   = document.getElementById('entry-template').innerHTML;
       var template = Handlebars.compile(source);
       var context = {id: element.keyword,title: element.keyword, description: element.description, image:element.image_url, alt:element.keyword};
-      var html    = template(context);
-      $('body').append(html);
+      var html = template(context);
+      $('#show').append(html);
+      // $('body').append(html);
+
 
     });
 

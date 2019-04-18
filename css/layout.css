@@ -1,13 +1,17 @@
-section.photo-template {
-    width: 30%;
-    display: flex;
-}
+div.entry{  
+  padding-left: 0;
+  text-align: left;
 
+}
+#show{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+
+}
 img {
-    height: 30%;
+    height: 60%;
     width: 25%;
     margin: 10px 20px;
-    justify-content: space-around;
-    align-items: stretch;
     border: 5px solid black;
 }

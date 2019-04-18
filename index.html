@@ -24,23 +24,19 @@
       </select>
     </header>
     <main>
-      <section id="photo-template">
-        <!-- <h2></h2>
-        <img id ='img' src="" alt="">
-        <p></p> -->
-      </section>
-      <!--handlebars-->
       <script id="entry-template" type="text/x-handlebars-template">
         <div class="entry">
-          <div class="body">
+          <div>
             {{body}}
           </div>
           <h2 id={{id}}> {{title}}</h2>
-        <img  src={{image}} alt={{alt}}>
+        <img src={{image}} alt={{alt}}>
         <p id={{id}}>{{description}}</p> 
         </div>
       </script>
     </main>
+   <div id="show"></div>
+    
    
     <script
     src="https://code.jquery.com/jquery-3.4.0.min.js"
