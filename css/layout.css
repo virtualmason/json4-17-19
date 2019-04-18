@@ -1,16 +1,15 @@
 div.entry{  
   padding-left: 0;
-  text-align: left;
 
 }
 #show{
     display: flex;
-    justify-content: center;
-    width: 30%;
-
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    flex-direction: row;
 }
 img {
     height: 60%;
-    width: 25%;
+    width: 45%;
     margin: 10px 20px;
 }
