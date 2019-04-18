@@ -37,5 +37,6 @@ $( document ).ready(function() {
       $(`img`).hide();
       $(`img[alt=${value}]`).show();
     }
+
   });
 });

@@ -1,0 +1,25 @@
+body {
+    margin: 0 auto;
+    background-color: orange;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+header {
+    text-align: center;
+}
+
+select {
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+main{
+    width: 100%;
+}
+
+
