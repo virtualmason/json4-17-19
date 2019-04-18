@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-
+ 
 
   function NewImage(image_url, title, description, keyword, horns) {
     this.image_url = image_url;
@@ -9,7 +9,7 @@ $( document ).ready(function() {
     this.horns = horns;
   }
   let uniqueArr =[];
-  $.getJSON( 'page-2.json', function( json ) {
+  $.getJSON( 'page-1.json', function( json ) {
     json.forEach(element =>{
       if(!uniqueArr.includes(element.keyword)) {
         uniqueArr.push(element.keyword);
@@ -37,6 +37,8 @@ $( document ).ready(function() {
     var value = $(this).val();
     if(value === 'all') {
       $(`img`).show();
+      $(`h2`).show();
+      $(`p`).show();
     } else {
       $(`img`).hide();
       $(`h2`).hide();
@@ -47,4 +49,10 @@ $( document ).ready(function() {
     }
 
   });
+  // Handle bars
+  var source   = document.getElementById('entry-template').innerHTML;
+  var template = Handlebars.compile(source);
+  var context = {title: 'My New Post', body: 'This is my first post!'};
+  var html    = template(context);
+  $('body').append(html);
 });
