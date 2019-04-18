@@ -37,6 +37,8 @@ $( document ).ready(function() {
     var value = $(this).val();
     if(value === 'all') {
       $(`img`).show();
+      $(`h2`).show();
+      $(`p`).show();
     } else {
       $(`img`).hide();
       $(`h2`).hide();
