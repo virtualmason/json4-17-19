@@ -20,7 +20,7 @@
     "indent": ["error", 2],
     "new-cap": "warn",
     "no-console": "off",
-    "no-multi-spaces": ["warn", {"exceptions": { "VariableDeclarator": true }}],
+    "no-multi-spaces": ["warn", {"exceptions": { "letiableDeclarator": true }}],
     "no-redeclare": ["error", { "builtinGlobals": true }],
     "no-template-curly-in-string": "error",
     "no-trailing-spaces": "warn",

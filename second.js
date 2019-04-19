@@ -34,7 +34,7 @@ $( document ).ready(function() {
     });
   });
   $('#mySelect').change(function(){
-    var value = $(this).val();
+    let value = $(this).val();
     if(value === 'all') {
       $(`img`).show();
       $(`h2`).show();
@@ -50,9 +50,9 @@ $( document ).ready(function() {
 
   });
   // Handle bars
-  var source   = document.getElementById('entry-template').innerHTML;
-  var template = Handlebars.compile(source);
-  var context = {title: 'My New Post', body: 'This is my first post!'};
-  var html    = template(context);
+  let source   = document.getElementById('entry-template').innerHTML;
+  let template = Handlebars.compile(source);
+  let context = {title: 'My New Post', body: 'This is my first post!'};
+  let html    = template(context);
   $('body').append(html);
 });
