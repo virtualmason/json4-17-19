@@ -8,10 +8,10 @@ $( document ).ready(function() {
       }
     
       console.log('img form handlebars', element.image_url);
-      var source   = document.getElementById('entry-template').innerHTML;
-      var template = Handlebars.compile(source);
-      var context = {id: element.keyword,title: element.keyword, description: element.description, image:element.image_url, alt:element.keyword};
-      var html    = template(context);
+      let source   = document.getElementById('entry-template').innerHTML;
+      let template = Handlebars.compile(source);
+      let context = {id: element.keyword,title: element.keyword, description: element.description, image:element.image_url, alt:element.keyword};
+      let html    = template(context);
       $('body').append(html);
 
     });
@@ -23,7 +23,7 @@ $( document ).ready(function() {
     });
   });
   $('#mySelect').change(function(){
-    var value = $(this).val();
+    let value = $(this).val();
     if(value === 'all') {
       $(`img`).show();
       $(`h2`).show();
